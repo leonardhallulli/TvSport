@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sport Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#player">Player</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Sport</a>
+                    <div class="dropdown-content">
+                        <a href="#tennis">Tennis</a>
+                        <a href="javascript:void(0)" onclick="openModal()">Football</a>
+                        <a href="#pingpong">Ping Pong</a>
+                        <a href="#wwe">WWE</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to the Sport Website</h2>
+            <div class="gallery">
+                <img src="1.jpg" alt="Football Player 1">
+                <img src="2.jpg" alt="Football Player 2">
+                <img src="3.jpg" alt="Football Player 3">
+                <img src="4.jpg" alt="Football Player 4">
+            </div>
+        </section>
+        <section id="support">
+            <h2>Support</h2>
+            <p>Here you can find support options...</p>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <p>Here you can find the menu options...</p>
+        </section>
+        <section id="player">
+            <h2>Player</h2>
+            <p>Here you can control the player...</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Sport Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="footballModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2>Football Links</h2>
+            <ul>
+                <li><a href="https://v4.sportsonline.si/channels/pt/sporttv2.php" target="_blank">Sport TV</a></li>
+                <li><a href="https://v4.sportsonline.si/channels/hd/hd4.php" target="_blank">Digi Sport</a></li>
+                <li><a href="https://v4.sportsonline.si/channels/hd/hd6.php" target="_blank">La Liga TV</a></li>
+                <li><a href="https://v4.sportsonline.si/channels/pt/eleven1.php" target="_blank">DAZN</a></li>
+                <li><a href="https://v4.sportsonline.si/channels/hd/hd5.php" target="_blank">One Soccer</a></li>
+                <li><a href="https://v4.sportsonline.si/channels/hd/hd6.php" target="_blank">La Liga 2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
